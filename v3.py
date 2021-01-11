@@ -1,7 +1,7 @@
 import numpy as np
 
-count = 0                            # счетчик попыток
-number = np.random.randint(1, 101)   # загадали число
+count = 0                            # Счетчик попыток
+number = np.random.randint(1, 101)   # Загадали число
 print ("Загадано число от 1 до 100")
 
 
@@ -16,10 +16,10 @@ def game_core_v3(number):
     с v2, результат не оптимальный, но и не было задачи достичь
     минимального количества попыток.
     '''
-    count = 1                            # счетчик количества попыток
-    increases_count = 0                  # счетчик итераций с увеличением
-    decreases_count = 0                  # счетчик итераций с уменьшением
-    predict = np.random.randint(1, 101)  # предполагаемое число
+    count = 1                            # Счетчик количества попыток
+    increases_count = 0                  # Счетчик итераций с увеличением
+    decreases_count = 0                  # Счетчик итераций с уменьшением
+    predict = np.random.randint(1, 101)  # Предполагаемое число
 
     while number != predict:
         count += 1
@@ -36,7 +36,7 @@ def game_core_v3(number):
             else:
                 predict -= 1
 
-    return(count)  # выход из цикла, если угадали
+    return(count)  # Выход из цикла, если угадали
 
 
 def score_game(game_core):
